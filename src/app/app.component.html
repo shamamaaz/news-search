@@ -1,0 +1,37 @@
+
+<div class="wrapper">
+ <!--  <h1>
+    Welcome to {{ title }}!
+  </h1>
+-->
+  <form [formGroup]="searchForm" autocomplete="off">
+    <mat-form-field>
+      <mat-label>Search by Name</mat-label>
+      <input matInput formControlName="searchName" placeholder="Search Query" required />
+      <mat-error *ngIf="searchForm.get('searchName').hasError('required')">Search name
+        required.</mat-error>
+    </mat-form-field>
+    <button mat-raised-button (click)="search()">Search</button>
+    <button mat-raised-button (click)="next()">Next</button>
+  </form>
+
+  <div class="results">
+    <ul>
+      <li *ngFor="let news of data">
+        <mat-card>
+          <mat-card-header>
+            <mat-card-title>{{news.title}}</mat-card-title>
+            <mat-card-subtitle>{{news.author}}</mat-card-subtitle>
+          </mat-card-header>
+          <mat-card-content>
+      <li>{{news.url}}</li>
+      <p>
+        {{news.story_text}}
+      </p>
+      <p>{{news.comment_text}}</p>
+      </mat-card-content>
+      </mat-card>
+      </li>
+    </ul>
+  </div>
+</div>

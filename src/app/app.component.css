@@ -1,0 +1,25 @@
+.results {
+    width: 100vw;
+    height: 100vh;
+}
+
+.mat-card {
+    width: 500px;
+}
+
+ul {
+    list-style-type: none;
+    margin : 2rem 0;
+    text-align: center;
+}
+
+.wrapper {
+        width: 100vw;
+        height: 100vh;
+        text-align: center;
+        margin: 0 auto;
+}
+.mat-form-field {
+    width: 30%;
+    margin: 3rem;
+}

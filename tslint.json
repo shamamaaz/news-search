@@ -1,0 +1,12 @@
+{
+  "extends": "tslint-config-airbnb",
+  "rules": {
+	"indent": [true, "tabs", 4],
+    "ter-indent": false,
+    "trailing-comma": false,
+    "whitespace": [true, "check-separator"],
+    "prefer-template": true,
+	"max-line-length": [true, 200],
+	"prefer-object-spread": true
+  }
+}
